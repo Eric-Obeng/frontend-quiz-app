@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { QuizQuestionsComponent } from '../quiz-questions/quiz-questions.component';
 
 @Component({
   selector: 'app-quitz-interface',
   standalone: true,
-  imports: [],
+  imports: [QuizQuestionsComponent],
   templateUrl: './quitz-interface.component.html',
-  styleUrl: './quitz-interface.component.css'
+  styleUrl: './quitz-interface.component.css',
 })
-export class QuitzInterfaceComponent {
-
-}
+export class QuitzInterfaceComponent {}
