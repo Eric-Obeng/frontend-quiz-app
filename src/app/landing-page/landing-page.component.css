@@ -1,0 +1,25 @@
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 80rem;
+  height: 35rem;
+  border: 5px solid red;
+}
+
+.landing-page__left,
+.landing-page__right {
+  width: 50%;
+  padding: 1rem 3rem;
+}
+
+.landing-page__left-title {
+  font-size: 2rem;
+  letter-spacing: 1.2;
+  font-weight: 400;
+}
+
+.landing-page__left-title span {
+  display: block;
+  font-size: 4.5rem;
+}
