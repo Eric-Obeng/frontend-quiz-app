@@ -13,8 +13,3 @@ body {
 
 
 
-/* clicked styles */
-.questions__options[clicked] {
-  outline: 4px solid #a729f5;
-}
-
