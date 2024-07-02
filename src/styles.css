@@ -7,9 +7,33 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #313e51;
+  --background-accent: #3b4d66;
+  --background-accent-light: #626c7f
+
+  /* light mode */
+  --light-mode-bg: #f4f6fa;
+  --light-mode-bg-primary: #ffffff;
+  --font-color:var(--background-color)
+
+  /* dark mode */
+  --dark-mode-bg: var(var(--background-color))
+  --dark-mode-bg-primary: var(var(--background-accent))
+
+  --color-accent: #abc1e1
+  --color-white-2: #f4f6fa;
+  --white-color: #ffffff
+
+  --green-color: #26d782
+  --orange-color: #ee5454
+
+  --active-color: #A729f5;
+  --correct-color: var(--green-color)
+  --wrong--color: var(--orange-color)
+
+}
+
 body {
   height: 100vh;
 }
-
-
-
