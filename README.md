@@ -11,11 +11,16 @@ This is a quiz application which tests your knowledge and understanding on the b
 The link to the site can be access by a click on this [**button**](https://frontend-quiz-app-mainv1.vercel.app/) 👈
 
 ## Tech stack
-![Angular](./src/assets/icon-angular.svg)
-- Angular
+<img src="./src/assets/icon-angular.svg" alt="angular svg image" width="100px" aspect-ratio="16 / 9">
 
 ## Authors
-- Jenef
-
+### Jenef
+```
+Readme file
+Score component
+```
+<!-- - [x] Readme file
+- [ ] Update the website
+ -->
 
  
