@@ -25,6 +25,8 @@
 .questions__number {
   /* border: 2px solid green; */
   height: 10%;
+  color: #abc1e1;
+  font-style: italic;
   display: flex;
   display: flex;
   font-size: 1.5rem;
@@ -135,16 +137,29 @@
 
 /* RIGHT SECTION STYLING ENDS HERE */
 
-
-
-
 /* clicked styles */
+/* outline color */
 .questions__options[clicked] {
-    outline: 4px solid #a729f5;
+  outline: 4px solid #a729f5;
+}
+/* alphabet color */
+.questions__options[clicked] > span {
+  background-color: #a729f5;
+  color: white;
+}
 
-  }
+/* correct */
+/* outline color */
+.questions__options[correct] {
+  outline: 4px solid #26d782;
+}
+/* alphabet color */
+.questions__options[correct] > span {
+  background-color: #26d782;
+  color: white;
+}
 
-  .questions__options[clicked] > span {
-   background-color: #A729F5;
-   color: white;
-  }
+svg {
+  display: block;
+  margin-inline-start: auto;
+}
