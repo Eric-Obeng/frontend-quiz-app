@@ -159,6 +159,19 @@
   color: white;
 }
 
+/* incorrect */
+/* outline color */
+.questions__options[incorrect] {
+  outline: 4px solid #EE5454;
+}
+/* alphabet color */
+.questions__options[incorrect] > span {
+  background-color: #EE5454;
+  color: white;
+}
+
+
+/* svg for corrent and incorrect */
 svg {
   display: block;
   margin-inline-start: auto;
