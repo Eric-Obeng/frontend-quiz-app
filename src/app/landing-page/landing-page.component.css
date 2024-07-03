@@ -1,10 +1,9 @@
 .landing-page {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
   width: 80rem;
-  height: 35rem;
-  border: 5px solid red;
+  height: 25rem;
+  display: flex;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
 }
 
 .landing-page__left,
@@ -13,13 +12,73 @@
   padding: 1rem 3rem;
 }
 
+.landing-page__left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.landing-page__left p {
+  color: #abc1e1;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
 .landing-page__left-title {
-  font-size: 2rem;
-  letter-spacing: 1.2;
-  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .landing-page__left-title span {
   display: block;
-  font-size: 4.5rem;
+  /* font-size: 3.7rem; */
+  font-weight: 400;
+}
+
+.landing-page .landing-page__right {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--wrong-color);
+  height: 100%;
+  gap: 20px;
+}
+
+.landing-page__right .btn {
+  background-color: #3b4d66;
+  height: 25%;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.landing-page__right .btn p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.landing-page__right .btn .icon {
+  padding: 0.2rem;
+  border-radius: 8px;
+}
+
+.html-img {
+  background-color: #fff1e9;
+}
+
+.css-img {
+  background-color: #e0fdef;
+}
+
+.js-img {
+  background-color: #ebf0ff;
+}
+
+.acc-img {
+  background-color: #f6e7ff;
 }

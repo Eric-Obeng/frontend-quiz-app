@@ -141,9 +141,9 @@
 /* clicked styles */
 .questions__options[clicked] {
     outline: 4px solid #a729f5;
-    
+
   }
-  
+
   .questions__options[clicked] > span {
    background-color: #A729F5;
    color: white;
