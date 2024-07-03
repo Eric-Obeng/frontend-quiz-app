@@ -19,12 +19,4 @@ The link to the site can be access by a click on this [**button**](https://front
 - Readme file
 - Final score component
 
-<!-- ```
-Readme file
-Final score component
-``` -->
-<!-- - [x] Readme file
-- [ ] Update the website
- -->
-
  
