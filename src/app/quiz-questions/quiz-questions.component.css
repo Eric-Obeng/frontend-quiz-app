@@ -25,6 +25,8 @@
 .questions__number {
   /* border: 2px solid green; */
   height: 10%;
+  color: #abc1e1;
+  font-style: italic;
   display: flex;
   display: flex;
   font-size: 1.5rem;
@@ -43,7 +45,7 @@
 /* container */
 .questions__progresscontainer {
   /* border: 2px solid blue; */
-  height: 30%;
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -123,6 +125,28 @@
   transition: background-color 0.3s;
 }
 
+/* error text under button styling starts here */
+.questions__errorwrapper {
+  height: 2rem;
+}
+.questions__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.questions__error > svg {
+  margin: 0;
+  width: 1.5rem;
+}
+.questions__error > p {
+  color: #ee5454;
+  font-size: 1.2rem;
+}
+
+/* error text under button styling endss here */
+
 /* hovering styles starts here */
 .questions__options:hover > span {
   background-color: #f6e7ff;
@@ -135,16 +159,47 @@
 
 /* RIGHT SECTION STYLING ENDS HERE */
 
-
-
-
 /* clicked styles */
+/* outline color */
 .questions__options[clicked] {
-    outline: 4px solid #a729f5;
+  outline: 4px solid #a729f5;
+}
+/* alphabet color */
+.questions__options[clicked] > span {
+  background-color: #a729f5;
+  color: white;
+}
 
-  }
+/* correct */
+/* outline color */
+.questions__options[correct] {
+  outline: 4px solid #26d782;
+}
+/* alphabet color */
+.questions__options[correct] > span {
+  background-color: #26d782;
+  color: white;
+}
 
-  .questions__options[clicked] > span {
-   background-color: #A729F5;
-   color: white;
-  }
+/* incorrect */
+/* outline color */
+.questions__options[incorrect] {
+  outline: 4px solid #ee5454;
+}
+/* alphabet color */
+.questions__options[incorrect] > span {
+  background-color: #ee5454;
+  color: white;
+}
+
+/* svg for corrent and incorrect */
+svg {
+  display: block;
+  margin-inline-start: auto;
+}
+
+/* this will toggle display hidden*/
+
+.hide {
+  display: none;
+}
