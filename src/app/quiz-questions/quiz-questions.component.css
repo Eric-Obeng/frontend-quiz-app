@@ -125,6 +125,28 @@
   transition: background-color 0.3s;
 }
 
+/* error text under button styling starts here */
+.questions__errorwrapper {
+  height: 2rem;
+}
+.questions__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.questions__error > svg {
+  margin: 0;
+  width: 1.5rem;
+}
+.questions__error > p {
+  color: #ee5454;
+  font-size: 1.2rem;
+}
+
+/* error text under button styling endss here */
+
 /* hovering styles starts here */
 .questions__options:hover > span {
   background-color: #f6e7ff;
@@ -162,17 +184,22 @@
 /* incorrect */
 /* outline color */
 .questions__options[incorrect] {
-  outline: 4px solid #EE5454;
+  outline: 4px solid #ee5454;
 }
 /* alphabet color */
 .questions__options[incorrect] > span {
-  background-color: #EE5454;
+  background-color: #ee5454;
   color: white;
 }
-
 
 /* svg for corrent and incorrect */
 svg {
   display: block;
   margin-inline-start: auto;
+}
+
+/* this will toggle display hidden*/
+
+.hide {
+  display: none;
 }
