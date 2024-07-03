@@ -1,7 +1,8 @@
 # Frontend Quiz App
 
 **Sample preview**
-<img src="./src/assets/preview.jpg" alt="angular svg image" width="500px"  >
+
+<img src="./src/assets/preview.jpg" alt="angular svg image" width="500px" >
 
 ## About the app
 This is a quiz application which tests your knowledge and understanding on the basic frontend technologies. The may color topic ranging from HTML, CSS, JavaScript and Accessibility, with a total of 10 questions per topic. The application was designed with a user friend interface with mild and appealing colors.
@@ -17,10 +18,13 @@ The link to the site can be access by a click on this [**button**](https://front
 ### Jenef
 - Readme file
 - Final score component
+
 <!-- ```
 Readme file
-Final score component -->
-```
-
+Final score component
+``` -->
+<!-- - [x] Readme file
+- [ ] Update the website
+ -->
 
  
