@@ -24,11 +24,11 @@
                     "correctAnswer": "C"
                 },
                 {
-                    "text": "What is the purpose of the HTML <details> and <summary> elements?",
+                    "text": "What is the correct syntax of doctype in HTML5?",
                     "answerOptions": [
-                        {"label": "A", "answer": "To define a dialog box or popup window"},
-                        {"label": "B", "answer": "To create collapsible section with a summary or heading"},
-                        {"label": "C", "answer": "To mark up a section of text as important"},
+                        {"label": "A", "answer": "<doctype html!>"},
+                        {"label": "B", "answer": "<!doctype html>"},
+                        {"label": "C", "answer": "<doctype html>"},
                         {"label": "D", "answer": "All of the above"}
                     ],
                     "correctAnswer": "B"
@@ -129,12 +129,12 @@
                     "correctAnswer": "B"
                 },
                 {
-                    "text": "What does the CSS property `display: inline-block;` do?",
+                    "text": "Which of the following CSS selectors are used to specify a group of elements?",
                     "answerOptions": [
-                        {"label": "A", "answer": "Makes the element behave like a block-level element"},
-                        {"label": "B", "answer": "Makes th element behave like an inline element without any margins or padding"},
-                        {"label": "C", "answer": "Makes th element behave like an inline element but allows for margins and padding"},
-                        {"label": "D", "answer": "Makes the element invisible on the webpage"}
+                        {"label": "A", "answer": "id"},
+                        {"label": "B", "answer": "tag"},
+                        {"label": "C", "answer": "class"},
+                        {"label": "D", "answer": "Both A and C"}
                     ],
                     "correctAnswer": "C"
                 },
@@ -149,12 +149,12 @@
                     "correctAnswer": "B"
                 },
                 {
-                    "text": "What is the purpose of the CSS property `z-index`?",
+                    "text": "Which of the following CSS framework is used to create a responsive design?",
                     "answerOptions": [
-                        {"label": "A", "answer": "Determines the stacking order of elemenets"},
-                        {"label": "B", "answer": "Sets the background color of an element"},
-                        {"label": "C", "answer": "Defines the size of an element"},
-                        {"label": "D", "answer": "Specifies the position of an element on the page"}
+                        {"label": "A", "answer": "Bootstrap"},
+                        {"label": "B", "answer": "Django"},
+                        {"label": "C", "answer": "rails"},
+                        {"label": "D", "answer": "larawell"}
                     ],
                     "correctAnswer": "A"
                 },
@@ -329,12 +329,12 @@
                     "correctAnswer": "C"
                 },
                 {
-                    "text": "What does WCAG stand for in the context of web accessibility?",
+                    "text": "When was version 1.0 of the Web Content Accessibility Guidelines (WCAG) released?",
                     "answerOptions": [
-                        {"label": "A", "answer": "World Conference on Accessibility Goals"},
-                        {"label": "B", "answer": "Web Content Accessibility Guidelines"},
-                        {"label": "C", "answer": "Web Content for All Generations"},
-                        {"label": "D", "answer": "Web Compliance and Accessibility Group"}
+                        {"label": "A", "answer": "2005"},
+                        {"label": "B", "answer": "1999"},
+                        {"label": "C", "answer": "2008"},
+                        {"label": "D", "answer": "1995"}
                     ],
                     "correctAnswer": "B"
                 },
@@ -342,21 +342,21 @@
                     "text": "How many levels of accessibility are there in WCAG?",
                     "answerOptions": [
                         {"label": "A", "answer": "Three: A, AA and AAA"},
-                        {"label": "B", "answer": "None, all websites must confirm with all success criteria in WCAG"},
+                        {"label": "B", "answer": "None"},
                         {"label": "C", "answer": "One: AA only"},
                         {"label": "D", "answer": "Two: A and AA"}
                     ],
                     "correctAnswer": "A"
                 },
                 {
-                    "text": "Keyboard accessibility means:",
+                    "text": "Which of the following disabilities is WCAG primarily designed to address?",
                     "answerOptions": [
-                        {"label": "A", "answer": "A keyboard must also display the letters in braille"},
-                        {"label": "B", "answer": "A web page must be operable with a keyboard only"},
-                        {"label": "C", "answer": "A keyboard must be connected to a computer"},
-                        {"label": "D", "answer": "None of the above"}
+                        {"label": "A", "answer": "Visual Impairments"},
+                        {"label": "B", "answer": "Cognitive Impairments"},
+                        {"label": "C", "answer": "Hearing Impairments"},
+                        {"label": "D", "answer": "All of the above"}
                     ],
-                    "correctAnswer": "B"
+                    "correctAnswer": "D"
                 },
                 {
                     "text": "The fourth principle of the Web Content Accessibility Guidelines (WCAG) is:",
@@ -369,22 +369,22 @@
                     "correctAnswer": "C"
                 },
                 {
-                    "text": "The biggest accessibility mistake when using icons on a web page is:",
+                    "text": "Which WCAG principle emphasizes that content should be perceivable to users?",
                     "answerOptions": [
-                        {"label": "A", "answer": "Making them too small to click"},
-                        {"label": "B", "answer": "Animating the icon on hover"},
-                        {"label": "C", "answer": "Not naming them (with text nor aria-label)"},
-                        {"label": "D", "answer": "None of the above"}
+                        {"label": "A", "answer": "Perceivable"},
+                        {"label": "B", "answer": "Operable"},
+                        {"label": "C", "answer": "Understandable"},
+                        {"label": "D", "answer": "Robust"}
                     ],
                     "correctAnswer": "A"
                 },
                 {
-                    "text": "The EAA stands for",
+                    "text": "Which WCAG principle emphasizes that all functionality should be operable through a keyboard or keyboard interface?",
                     "answerOptions": [
-                        {"label": "A", "answer": "The E-commerce Accessibility Association"},
-                        {"label": "B", "answer": "The E-commerce Accessibility Act"},
-                        {"label": "C", "answer": "The European Accessibility Association"},
-                        {"label": "D", "answer": "The European Accessibility Act"}
+                        {"label": "A", "answer": "Perceivable"},
+                        {"label": "B", "answer": "Understandable"},
+                        {"label": "C", "answer": "Robust"},
+                        {"label": "D", "answer": "Operable"}
                     ],
                     "correctAnswer": "D"
                 },
@@ -399,22 +399,22 @@
                     "correctAnswer": "C"
                 },
                 {
-                    "text": "How can you ensure that web content is accessible to users with color vision deficiency?",
+                    "text": "Which of the following is NOT a WCAG 2.1 success criterion level?",
                     "answerOptions": [
-                        {"label": "A", "answer": "Use only grayscale colors"},
-                        {"label": "B", "answer": "Provide text descriptions for all colors used"},
-                        {"label": "C", "answer": "Use contrasting colors for text and backgrounds"},
-                        {"label": "D", "answer": "Avoid using colors altogether"}
+                        {"label": "A", "answer": "Level A"},
+                        {"label": "B", "answer": "Level AA"},
+                        {"label": "C", "answer": "Level AAA"},
+                        {"label": "D", "answer": "Level BBB"}
                     ],
-                    "correctAnswer": "C"
+                    "correctAnswer": "D"
                 },
                 {
-                    "text": "What is the purpose of the aria-expanded attribute in ARIA?",
+                    "text": "Which HTML tag is used to create a semantic link?",
                     "answerOptions": [
-                        {"label": "A", "answer": "Specifies whether an element is expanded or collapsed"},
-                        {"label": "B", "answer": "Determines the size of an element"},
-                        {"label": "C", "answer": "Expands the browser window"},
-                        {"label": "D", "answer": "Enables animation effects"}
+                        {"label": "A", "answer": "<div>"},
+                        {"label": "B", "answer": "<span>"},
+                        {"label": "C", "answer": "<a>"},
+                        {"label": "D", "answer": "<link>"}
                     ],
                     "correctAnswer": "A"
                 }
