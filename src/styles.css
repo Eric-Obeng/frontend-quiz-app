@@ -17,22 +17,22 @@
   /* light mode */
   --light-mode-bg: #f4f6fa;
   --light-mode-bg-primary: #ffffff;
-  --font-color:var(--background-color)
+  --font-color:var(--background-color);
 
   /* dark mode */
-  --dark-mode-bg: var(var(--background-color))
-  --dark-mode-bg-primary: var(var(--background-accent))
+  --dark-mode-bg: var(var(--background-color));
+  --dark-mode-bg-primary: var(var(--background-accent));
 
-  --color-accent: #abc1e1
+  --color-accent: #abc1e1;
   --color-white-2: #f4f6fa;
-  --white-color: #ffffff
+  --white-color: #ffffff;
 
-  --green-color: #26d782
-  --orange-color: #ee5454
+  --green-color: #26d782;
+  --orange-color: #ee5454;
 
   --active-color: #A729f5;
-  --correct-color: var(--green-color)
-  --wrong--color: var(--orange-color)
+  --correct-color: var(--green-color);
+  --wrong--color: var(--orange-color);
 
 }
 
