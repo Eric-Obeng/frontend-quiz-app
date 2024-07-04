@@ -1,0 +1,21 @@
+<header class="header">
+  <!-- selected topic -->
+  <div class="header__selected-topic">
+    <span class="acc-img landing-page__btn-icon"
+      ><img src="../../assets/icon-accessibility.svg" alt=""
+    /></span>
+    <h3 class="header__topic-title">Accessibility</h3>
+  </div>
+
+  <!-- theme toggler -->
+  <div class="header__theme-toggle-container">
+    <img src="../../assets/icon-sun-dark.svg" alt="light-mode" />
+    <button (click)="handleClick()" class="header__theme-toggle">
+      <div
+        [class.active]="toggleActive"
+        class="header__theme-toggle-circle"
+      ></div>
+    </button>
+    <img src="../../assets/icon-moon-dark.svg" alt="light-mode" />
+  </div>
+</header>
