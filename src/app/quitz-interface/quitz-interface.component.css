@@ -1,13 +1,11 @@
 #container {
   height: 100%;
-  background-color: #313e51;
-  background-image: url("../../assets/pattern-background-desktop-dark.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  
+  
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 3.5rem;
+  width: 100%;
+  flex-direction: column;
 }
 
 /* background rings design  ends here*/
