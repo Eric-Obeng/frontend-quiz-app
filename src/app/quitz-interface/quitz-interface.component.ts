@@ -10,4 +10,6 @@ import {CompletedQuizComponent} from '../completed-quiz/completed-quiz.component
   templateUrl: './quitz-interface.component.html',
   styleUrl: './quitz-interface.component.css',
 })
-export class QuitzInterfaceComponent {}
+export class QuitzInterfaceComponent {
+  
+}

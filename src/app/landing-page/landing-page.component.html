@@ -1,3 +1,4 @@
+@if(isMenu){
 <div class="landing-page">
   <div class="landing-page__left">
     <h1 class="landing-page__left-title">
@@ -7,21 +8,153 @@
     <p>Pick a subject to get started.</p>
   </div>
   <div class="landing-page__right">
-    <button id="html-btn" class="btn">
-      <span class="html-img icon"><img src="../../assets/icon-html.svg" alt="" /></span>
-      <p id="html">HTML</p>
+    <button (click)="startQuiz(html)" id="html-btn" class="btn">
+      <span class="html-img icon"
+        ><img src="../../assets/icon-html.svg" alt=""
+      /></span>
+      <p id="html" #html>HTML</p>
     </button>
-    <button id="css-btn" class="btn">
-      <span class="css-img icon"><img src="../../assets/icon-css.svg" alt="" /></span>
-      <p id="css">CSS</p>
+    <button (click)="startQuiz(css)" id="css-btn" class="btn">
+      <span class="css-img icon"
+        ><img src="../../assets/icon-css.svg" alt=""
+      /></span>
+      <p id="css" #css>CSS</p>
     </button>
-    <button id="js-btn" class="btn">
-      <span class="js-img icon"><img src="../../assets/icon-js.svg" alt="Javascript logo" /></span>
-      <p id="js">Javascript</p>
+    <button (click)="startQuiz(js)" id="js-btn" class="btn">
+      <span class="js-img icon"
+        ><img src="../../assets/icon-js.svg" alt="Javascript logo"
+      /></span>
+      <p id="js" #js>Javascript</p>
     </button>
-    <button id="accessibility-btn" class="btn">
-      <span class="acc-img icon"><img src="../../assets/icon-accessibility.svg" alt="" /></span>
-      <p id="accessibility">Accessibility</p>
+    <button (click)="startQuiz(access)" id="accessibility-btn" class="btn">
+      <span class="acc-img icon"
+        ><img src="../../assets/icon-accessibility.svg" alt=""
+      /></span>
+      <p id="accessibility" #access>Accessibility</p>
     </button>
   </div>
 </div>
+} @if(isQuiz){
+<!-- quiz qustions -->
+<div class="questions__container">
+  <!-- Left Section -->
+  <div class="questions__leftsection">
+    <div class="questions__number">
+      <p>
+        Question <span id="currentQuestionNum">{{questionNum + 1}}</span> of
+        <span id="totalQuestions">10</span>
+      </p>
+    </div>
+    <div class="questions__question">
+      <h1 id="quizQuestion">
+        {{ data.categories[categNum].questions[questionNum].text }}
+      </h1>
+    </div>
+    <!-- question progress -->
+    <div class="questions__progresscontainer">
+      <div class="questions__progressline">
+        <div class="questions__progress" [style.width]="filler.toString()+'%'"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Right Section -->
+  <div class="questions__rightsection">
+    <div class="questions__optionscontainer">
+      <div
+        (click)="selectedOption(A)"
+        class="questions__options"
+        [attr.clicked]="isA ? '' : null"
+        [attr.correct]="isAcorrect ? '' : null"
+        [attr.incorrect]="isAerror?'':null"
+        [attr.rightSelect]="isAselect?'':null"
+      >
+        <span #A>A</span>
+        <p id="a">
+          {{ data.categories[categNum].questions[questionNum].answerOptions[0].answer }}
+        </p>
+        <!-- svg try test -->
+         @if(isAcorrect){
+           <img [src]="correctSvg" alt="">
+         }
+         @if(isAerror){
+          <img [src]="errorSvg" alt="">
+         }
+        <!-- svg try test -->
+      </div>
+      <div
+        (click)="selectedOption(B)"
+        class="questions__options"
+        [attr.clicked]="isB ? '' : null"
+        [attr.correct]="isBcorrect ? '' : null"
+        [attr.incorrect]="isBerror?'':null"
+        [attr.rightSelect]="isBselect?'':null"
+      >
+        <span #B>B</span>
+        <p id="a">
+          {{ data.categories[categNum].questions[questionNum].answerOptions[1].answer }}
+        </p>
+        @if(isBcorrect){
+          <img [src]="correctSvg" alt="">
+        }
+        @if(isBerror){
+         <img [src]="errorSvg" alt="">
+        }
+      </div>
+      <div
+        (click)="selectedOption(C)"
+        class="questions__options"
+        [attr.clicked]="isC ? '' : null"
+        [attr.correct]="isCcorrect ? '' : null"
+        [attr.incorrect]="isCerror?'':null"
+        [attr.rightSelect]="isCselect?'':null"
+      >
+        <span #C>C</span>
+        <p id="a">
+          {{ data.categories[categNum].questions[questionNum].answerOptions[2].answer }}
+        </p>
+        @if(isCcorrect){
+          <img [src]="correctSvg" alt="">
+        }
+      </div>
+      <div
+        (click)="selectedOption(D)"
+        class="questions__options"
+        [attr.clicked]="isD ? '' : null"
+        [attr.correct]="isDcorrect ? '' : null"
+        [attr.incorrect]="isDerror?'':null"
+        [attr.rightSelect]="isDselect?'':null"
+      >
+        <span #D>D</span>
+        <p id="a">
+          {{ data.categories[categNum].questions[questionNum].answerOptions[3].answer }}
+        </p>
+        @if(isDcorrect){
+          <img [src]="correctSvg" alt="">
+        }
+      </div>
+    </div>
+    <!-- submit answer button -->
+    <button (click)="submitQuestion(submitNext)" class="buttons" #submitNext>Submit Answer</button>
+    <div class="questions__errorwrapper">
+      <div class="questions__error hide">
+        <!-- error svg -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="none"
+          viewBox="0 0 40 40"
+        >
+          <path
+            fill="#EE5454"
+            d="M20 5a15 15 0 1 1 0 30 15 15 0 0 1 0-30Zm0 2.5a12.5 12.5 0 1 0 0 25 12.5 12.5 0 0 0 0-25Zm-5.402 7.415.142-.175a1.25 1.25 0 0 1 1.595-.143l.175.143L20 18.233l3.49-3.493a1.25 1.25 0 0 1 1.595-.143l.175.143a1.25 1.25 0 0 1 .142 1.595l-.142.175L21.767 20l3.493 3.49a1.25 1.25 0 0 1 .142 1.595l-.142.175a1.25 1.25 0 0 1-1.595.142l-.175-.142L20 21.767l-3.49 3.493a1.25 1.25 0 0 1-1.595.142l-.175-.142a1.25 1.25 0 0 1-.143-1.595l.143-.175L18.233 20l-3.493-3.49a1.25 1.25 0 0 1-.143-1.595Z"
+          />
+        </svg>
+        <!-- error svg -->
+        <!-- error message -->
+        <p>Please select an answer</p>
+      </div>
+    </div>
+  </div>
+</div>
+}
