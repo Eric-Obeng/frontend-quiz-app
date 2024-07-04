@@ -16,7 +16,8 @@
 .header__topic-title {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--color-white-2);
+  color: var(--text-clr-primary);
+  transition: .15s ease-in-out;
 }
 
 .header__theme-toggle-container {
@@ -28,7 +29,7 @@
 .header__theme-toggle {
   width: 3rem;
   height: 2rem;
-  background-color: var(--active-color);
+  background-color: var(--clr-purple);
   border-radius: 1.5rem;
   position: relative;
   padding: 0.2rem;

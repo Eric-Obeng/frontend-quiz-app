@@ -3,6 +3,7 @@
   width: 80rem;
   height: 35rem;
   display: flex;
+  margin-inline: auto;
 }
 
 /* left and right sections to have same width */
