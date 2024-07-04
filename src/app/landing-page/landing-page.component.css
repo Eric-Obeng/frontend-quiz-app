@@ -9,7 +9,7 @@
 h1 {
   margin-bottom: 1rem;
   color: var(--text-clr-primary);
-  transition: .15s ease-in-out
+  transition: 0.15s ease-in-out;
 }
 .landing-page__hero-title {
   font-size: 40px;
@@ -18,7 +18,7 @@ h1 {
 }
 .landing-page__intro-text {
   color: var(--text-clr-secondary);
-  transition: .15s ease-in-out;
+  transition: 0.15s ease-in-out;
   font-size: 1.2rem;
   font-style: italic;
 }
@@ -36,7 +36,7 @@ h1 {
 
 .landing-page__quiz-topics .btn {
   background-color: var(--background-accent);
-  transition: .15s ease-in-out;
+  transition: 0.15s ease-in-out;
   height: 25%;
   border-radius: 20px;
   padding: 0.5rem 1rem;
@@ -98,7 +98,14 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 830px) {
+/* @media only screen and (max-width: 830px) {
+  .landing-page__hero-title {
+    font-size: 48px;
+  }
+} */
+
+ /* betwen 768px and 830px */
+@media (768px >= width <= 830px) {
   .landing-page__hero-title {
     font-size: 48px;
   }
