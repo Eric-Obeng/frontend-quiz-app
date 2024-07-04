@@ -9,13 +9,13 @@
 
   <!-- theme toggler -->
   <div class="header__theme-toggle-container">
-    <img src="../../assets/icon-sun-dark.svg" alt="light-mode" />
+    <img id="sun-icon" src="../../assets/icon-sun-dark.svg" alt="light-mode" />
     <button (click)="handleClick()" class="header__theme-toggle">
       <div
         [class.active]="toggleActive"
         class="header__theme-toggle-circle"
       ></div>
     </button>
-    <img src="../../assets/icon-moon-dark.svg" alt="light-mode" />
+    <img id="moon-icon" src="../../assets/icon-moon-dark.svg" alt="light-mode" />
   </div>
 </header>
