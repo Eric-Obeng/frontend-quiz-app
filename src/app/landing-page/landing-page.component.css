@@ -1,42 +1,3 @@
-/* .landing-page {
-  width: 80rem;
-  height: 25rem;
-  display: flex;
-  color: #fff;
-  font-family: "Rubik", sans-serif;
-}
-
-.landing-page__hero,
-.landing-page__quiz-topics {
-  width: 50%;
-  padding: 1rem 3rem;
-}
-
-.landing-page__hero {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.landing-page__hero p {
-  color: #abc1e1;
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
-.landing-page__hero-title {
-  font-size: 4rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-
-.landing-page__hero-title span {
-  display: block;
-   font-size: 3.7rem; 
-  font-weight: 400;
-}
-
-*/
 .landing-page {
   padding: 2rem;
   display: flex;
@@ -48,6 +9,7 @@
 h1 {
   margin-bottom: 1rem;
   color: var(--text-clr-primary);
+  transition: .15s ease-in-out
 }
 .landing-page__hero-title {
   font-size: 40px;
@@ -56,6 +18,7 @@ h1 {
 }
 .landing-page__intro-text {
   color: var(--text-clr-secondary);
+  transition: .15s ease-in-out;
   font-size: 1.2rem;
   font-style: italic;
 }
@@ -73,6 +36,7 @@ h1 {
 
 .landing-page__quiz-topics .btn {
   background-color: var(--background-accent);
+  transition: .15s ease-in-out;
   height: 25%;
   border-radius: 20px;
   padding: 0.5rem 1rem;
@@ -80,7 +44,7 @@ h1 {
   align-items: center;
   gap: 1.5rem;
   border: none;
-  color: #fff;
+  color: var(--text-clr-primary);
   cursor: pointer;
 }
 
