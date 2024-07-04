@@ -9,4 +9,6 @@ import { LandingPageComponent } from '../landing-page/landing-page.component';
   templateUrl: './quitz-interface.component.html',
   styleUrl: './quitz-interface.component.css',
 })
-export class QuitzInterfaceComponent {}
+export class QuitzInterfaceComponent {
+  
+}

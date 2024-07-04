@@ -198,8 +198,3 @@ svg {
   margin-inline-start: auto;
 }
 
-/* this will toggle display hidden*/
-
-.hide {
-  display: none;
-}

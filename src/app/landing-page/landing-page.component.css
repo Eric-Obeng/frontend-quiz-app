@@ -82,3 +82,212 @@
 .acc-img {
   background-color: #f6e7ff;
 }
+
+/* QUiz questions */
+
+.questions__container {
+  /* border: 2px solid red; */
+  width: 80rem;
+  height: 35rem;
+  display: flex;
+}
+
+/* left and right sections to have same width */
+.questions__leftsection,
+.questions__rightsection {
+  /* border: 2px solid blue; */
+  width: 50%;
+  padding: 1rem 3rem;
+}
+
+/* questions left section syling starts here */
+.questions__leftsection {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 6rem;
+}
+
+/* LEFT SECTION STYLING STARTS HERE */
+/* Questions number styling */
+.questions__number {
+  /* border: 2px solid green; */
+  height: 10%;
+  color: #abc1e1;
+  font-style: italic;
+  display: flex;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+/* Questions display Containter styling */
+.questions__question {
+  /* border: 2px solid pink; */
+  height: 40%;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Questions Progress Bar */
+
+/* container */
+.questions__progresscontainer {
+  /* border: 2px solid blue; */
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* progress fill wrapper */
+.questions__progressline {
+  background-color: #3b4d66;
+  /* border: 2px solid red; */
+  width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* progress fill */
+.questions__progress {
+  /* width: 100%; */
+  height: 1rem;
+  background-color: #713bad;
+  transition: width 0.3s;
+}
+/* LEFT SECTION STYLING ENDS HERE */
+
+/* RIGHT SECTION STYLING STARTS HERE */
+.questions__rightsection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.questions__optionscontainer {
+  /* border: 2px solid red; */
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.questions__options {
+  background-color: #3b4d66;
+  height: 25%;
+  /* border: 2px solid blue; */
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.questions__options > span {
+  background-color: #f4f6fa;
+  color: #626c7f;
+  width: 9%;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.questions__options > p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* submit button */
+.buttons {
+  /* border: 2px solid red; */
+  background-color: #a729f5;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 15%;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+/* error text under button styling starts here */
+.questions__errorwrapper {
+  height: 2rem;
+}
+.questions__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.questions__error > svg {
+  margin: 0;
+  width: 1.5rem;
+}
+.questions__error > p {
+  color: #ee5454;
+  font-size: 1.2rem;
+}
+
+/* error text under button styling endss here */
+
+/* hovering styles starts here */
+.questions__options:hover > span {
+  background-color: #f6e7ff;
+  color: #a729f5;
+}
+.buttons:hover {
+  background-color: #d394fa;
+}
+/* hovering styles ends here */
+
+/* RIGHT SECTION STYLING ENDS HERE */
+
+/* clicked styles */
+/* outline color */
+.questions__options[clicked] {
+  outline: 4px solid #a729f5;
+}
+/* alphabet color */
+.questions__options[clicked] > span {
+  background-color: #a729f5;
+  color: white;
+}
+
+/* correct */
+/* outline color */
+.questions__options[rightSelect]{
+  outline: 4px solid #26d782;
+}
+.questions__options[rightSelect] > span {
+ background-color:#26d782 ;
+ color: white;
+}
+
+/* alphabet color */
+.questions__options[correct] > span {
+  /* background-color: #26d782; */
+  color: #626c7f;
+}
+
+/* incorrect */
+/* outline color */
+.questions__options[incorrect] {
+  outline: 4px solid #ee5454;
+}
+/* alphabet color */
+.questions__options[incorrect] > span {
+  background-color: #ee5454;
+  color: white;
+}
+
+/* svg for corrent and incorrect */
+img {
+  display: block;
+  margin-inline-start: auto;
+}
