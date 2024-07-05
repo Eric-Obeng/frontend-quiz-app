@@ -89,3 +89,34 @@ body {
   a {
     text-decoration: none;
   }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+  .light-moon-icon,
+  .light-sun-icon {
+    display: none;
+  }
+  
+  .dark-moon-icon,
+  .dark-sun-icon {
+    display: block;
+  }
+  
+  /* DARK THEME */
+  .dark-theme .dark-moon-icon,
+  .dark-theme .dark-sun-icon {
+    display: none;
+  }
+  
+  .dark-theme .light-moon-icon,
+  .dark-theme .light-sun-icon {
+    display: block;
+}
+  
