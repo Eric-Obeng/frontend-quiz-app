@@ -1,3 +1,62 @@
+
+
+/* toggle */
+.togglecontaienr{
+  /* border: 2px solid red; */
+  padding-inline:4rem ;
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 2rem;
+}
+/* question category text and svg */
+.category{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  gap: 1rem;
+}
+.category > img{
+margin: 0;
+}
+
+.switch{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.switch > img{
+  margin: 0;
+}
+
+.togglewrap{
+  width: 2.7rem;
+  height: 1.5rem;
+  background-color: #a729f5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border-top: 1px solid rgb(239, 7, 146);
+}
+.togglewrap[light]{
+  justify-content: end;
+}
+.toggle{
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* toggle ends here */
+
 .landing-page {
   width: 80rem;
   height: 25rem;
@@ -152,7 +211,7 @@
   /* width: 100%; */
   height: 1rem;
   background-color: #713bad;
-  transition: width 0.3s;
+  transition: width 1s;
 }
 /* LEFT SECTION STYLING ENDS HERE */
 
@@ -175,16 +234,17 @@
   height: 25%;
   /* border: 2px solid blue; */
   border-radius: 20px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem 0rem 1rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 .questions__options > span {
   background-color: #f4f6fa;
+  flex-shrink: 0;
   color: #626c7f;
-  width: 9%;
-  font-size: 2rem;
+  width: 3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   padding: 0.2rem;
   display: flex;
@@ -195,7 +255,7 @@
 }
 
 .questions__options > p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: white;
 }
@@ -261,12 +321,12 @@
 
 /* correct */
 /* outline color */
-.questions__options[rightSelect]{
+.questions__options[rightSelect] {
   outline: 4px solid #26d782;
 }
 .questions__options[rightSelect] > span {
- background-color:#26d782 ;
- color: white;
+  background-color: #26d782;
+  color: white;
 }
 
 /* alphabet color */
@@ -291,3 +351,7 @@ img {
   display: block;
   margin-inline-start: auto;
 }
+
+
+
+/* COMPLETED  PAGE */

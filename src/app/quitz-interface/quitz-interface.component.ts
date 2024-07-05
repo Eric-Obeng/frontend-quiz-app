@@ -12,4 +12,9 @@ import {CompletedQuizComponent} from '../completed-quiz/completed-quiz.component
 })
 export class QuitzInterfaceComponent {
   
+  isDarkMode:boolean = true
+
+  toggleTheme(){
+    this.isDarkMode = !this.isDarkMode
+  }
 }
