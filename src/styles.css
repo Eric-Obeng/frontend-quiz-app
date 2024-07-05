@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "normalize.css";
+
+/* *,
+::after,
+::before {
+   margin: unset;
+   padding: unset;
+   box-sizing: border-box;
+} */
+
+:root {
+  --purple: #a729f5;
+  --very-dark-grayish-blue: #313e51;
+  --dark-grayish-blue: #3b4d66;
+  --grayish-blue: #626c7f;
+  --light-grayish-blue: #abc1e1;
+  --very-light-grayish-blue: #f4f6fa;
+  --white: #ffffff;
+  --green: #26d782;
+  --red: #ee5454;
+}
