@@ -90,3 +90,47 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (min-width: 675px) {
+    .quiz-complete {
+      padding: 64px;
+      padding-top: 0;
+      gap: 64px;
+    }
+  
+    .score-container {
+      gap: 40px;
+    }
+  
+    h1 {
+      font-size: 64px;
+    }
+  
+    .icon-container {
+      padding: 8px;
+    }
+  
+    .quiz-type-container {
+      gap: 24px;
+    }
+  
+    .quiz-type-container .text {
+      font-size: 28px;
+    }
+  
+    .user-score {
+      font-size: 144px;
+    }
+  
+    .max-score {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  
+    .play-again-button {
+      margin-top: 32px;
+      padding: 32px;
+      font-size: 28px;
+      border-radius: 24px;
+    }
+  }
