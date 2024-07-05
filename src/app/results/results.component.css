@@ -1,0 +1,154 @@
+.quiz-complete {
+    padding: 24px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 100%;
+  }
+  
+  h1 .bold-heading {
+    font-weight: 600;
+  }
+
+  .score-container {
+    display: flex;
+    background-color: var(--quiz-card-bg);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 12px;
+  }
+  
+  .quiz-type-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .total-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .user-score {
+    color: var(--text-color);
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+  }
+  
+  .max-score {
+    color: var(--subtitle-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .play-again-button {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    height: 56px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    border-radius: 12px;
+    background-color: var(--purple);
+  }
+  
+  .play-again-button:hover {
+    opacity: 0.5;
+  }
+  
+  .quiz-type-container .text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--text-color);
+  }
+  
+  .icon-container {
+    padding: 5.71px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 675px) {
+    .quiz-complete {
+      padding: 64px;
+      padding-top: 0;
+      gap: 64px;
+    }
+  
+    .score-container {
+      gap: 40px;
+    }
+  
+    h1 {
+      font-size: 64px;
+    }
+  
+    .icon-container {
+      padding: 8px;
+    }
+  
+    .quiz-type-container {
+      gap: 24px;
+    }
+  
+    .quiz-type-container .text {
+      font-size: 28px;
+    }
+  
+    .user-score {
+      font-size: 144px;
+    }
+  
+    .max-score {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  
+    .play-again-button {
+      margin-top: 32px;
+      padding: 32px;
+      font-size: 28px;
+      border-radius: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .quiz-complete {
+      padding: 140px;
+      padding-top: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .score-button-xl-container {
+      width: 50%;
+    }
+  
+    .score-container {
+      padding: 48px;
+    }
+  }
+  
