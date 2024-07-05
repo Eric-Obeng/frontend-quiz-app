@@ -208,3 +208,48 @@
       line-height: 150%;
     }
   }
+
+
+  /* extra large */
+
+  @media screen and (min-width: 1300px) {
+    .quiz-problems {
+      padding: 140px;
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .question {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40%;
+    }
+  
+    .progress-container {
+      margin-bottom: 4.2em;
+    }
+  
+    .options {
+      margin-top: 0;
+    }
+  
+    .options-container {
+      width: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .option {
+      padding: 18px 20px;
+    }
+  
+    .no-answer-container.active {
+      position: absolute;
+      display: flex;
+      bottom: -64px;
+      align-self: center;
+    }
+  }
