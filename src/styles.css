@@ -74,49 +74,49 @@ body {
   .light-theme .quiz-card,
   .light-theme .submit,
   .light-theme .next,
-  .light-theme .play-again-button {
+.light-theme .play-again-button {
     box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
-  }
+}
   
-  .dark-theme .option,
-  .dark-theme .quiz-card,
-  .dark-theme .submit,
-  .dark-theme .next,
-  .dark-theme .play-again-button {
+.dark-theme .option,
+.dark-theme .quiz-card,
+.dark-theme .submit,
+.dark-theme .next,
+.dark-theme .play-again-button {
     box-shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
-  }
+}
   
-  a {
+a {
     text-decoration: none;
-  }
+}
 
-  button {
+button {
     border: none;
     cursor: pointer;
-  }
+}
   
-  a {
+a {
     cursor: pointer;
-  }
+}
   
-  .light-moon-icon,
-  .light-sun-icon {
+.light-moon-icon,
+.light-sun-icon {
     display: none;
-  }
+}
   
-  .dark-moon-icon,
-  .dark-sun-icon {
+.dark-moon-icon,
+.dark-sun-icon {
     display: block;
-  }
+}
   
   /* DARK THEME */
-  .dark-theme .dark-moon-icon,
-  .dark-theme .dark-sun-icon {
+.dark-theme .dark-moon-icon,
+.dark-theme .dark-sun-icon {
     display: none;
-  }
+}
   
-  .dark-theme .light-moon-icon,
-  .dark-theme .light-sun-icon {
+.dark-theme .light-moon-icon,
+.dark-theme .light-sun-icon {
     display: block;
 }
   
