@@ -1,1 +1,28 @@
-<p>landing-page works!</p>
+<section class="home">
+  <div>
+    <h1>
+      <div class="welcome-heading">Welcome to the</div>
+      <div class="quiz-heading">Frontend Quiz!</div>
+    </h1>
+    <p class="subtitle">Pick a subject to get started.</p>
+  </div>
+
+  <div class="quiz-card-container">
+    <a
+      [routerLink]="[quiz.title]"
+      *ngFor="let quiz of quizzes"
+      class="quiz-card"
+      (click)="this.quizService.setQuizType(quiz.title)"
+    >
+      <div
+        class="icon-container"
+        [ngStyle]="{
+          'background-color': this.quizService.getIconContainerColor(quiz.title)
+        }"
+      >
+        <img [src]="quiz.icon" [alt]="quiz.title + 'Icon Image'" />
+      </div>
+      <p class="text">{{ quiz.title }}</p>
+    </a>
+  </div>
+</section>
