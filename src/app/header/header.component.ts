@@ -17,7 +17,7 @@ import { ThemeService } from '../services/theme.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
   @ViewChild('themeSwitcher') themeSwitcher!: ElementRef;
