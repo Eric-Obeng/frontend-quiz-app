@@ -147,4 +147,64 @@
   .option:hover > .option-letter {
     color: var(--purple);
   }
+
   
+  /* media querires starts here */
+
+  /* medium screen */
+@media screen and (min-width: 675px) {
+    .quiz-problems {
+      padding: 64px;
+      padding-top: 0;
+    }
+  
+    .problem-number {
+      font-size: 20px;
+    }
+  
+    .problem-title {
+      color: var(--text-color);
+      font-size: 36px;
+      margin-top: 27px;
+      line-height: 120%;
+    }
+  
+    .progress-container {
+      margin-top: 40px;
+    }
+  
+    .options {
+      margin-top: 64px;
+      gap: 24px;
+    }
+  
+    .option {
+      gap: 32px;
+      border-radius: 24px;
+    }
+  
+    .option-letter {
+      width: 56px;
+      height: 56px;
+      font-size: 28px;
+    }
+  
+    .option .text {
+      width: 80%;
+      line-height: 100%;
+      font-size: 28px;
+    }
+  
+    .submit,
+    .next {
+      margin-top: 32px;
+      padding: 32px;
+      font-size: 28px;
+      border-radius: 24px;
+    }
+  
+    .no-answer-container p {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
