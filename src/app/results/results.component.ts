@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './results.component.css'
 })
 export class ResultsComponent {
+  quizTitle: string = '';
 
 }
