@@ -31,4 +31,16 @@
     --quiz-card-bg: var(--white);
     --progress-bar-bg: var(--white);
     --error: var(--red);
-  }
+}
+
+.dark-theme {
+    --main-bg-color: var(--very-dark-grayish-blue);
+    --main-bg-image-mobile: url("/assets/images/pattern-background-mobile-dark.svg");
+    --main-bg-image-tablet: url("/assets/images/pattern-background-tablet-dark.svg");
+    --main-bg-image-desktop: url("/assets/images/pattern-background-desktop-dark.svg");
+    --text-color: var(--white);
+    --subtitle-color: var(--light-grayish-blue);
+    --quiz-card-bg: var(--dark-grayish-blue);
+    --progress-bar-bg: var(--dark-grayish-blue);
+    --error: var(--white);
+}
