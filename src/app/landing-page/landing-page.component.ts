@@ -1,13 +1,12 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
   imports: [],
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css', '../../styles.css'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
-  
+
 }
