@@ -10,7 +10,7 @@ import { ThemeService } from './services/theme.service';
   standalone: true,
   imports: [RouterOutlet, CommonModule, RouterModule, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'test';
