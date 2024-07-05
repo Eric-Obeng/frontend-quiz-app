@@ -20,3 +20,15 @@
   --green: #26d782;
   --red: #ee5454;
 }
+
+.light-theme {
+    --main-bg-color: var(--very-light-grayish-blue);
+    --main-bg-image-mobile: url("/assets/images/pattern-background-mobile-light.svg");
+    --main-bg-image-tablet: url("/assets/images/pattern-background-tablet-light.svg");
+    --main-bg-image-desktop: url("/assets/images/pattern-background-desktop-light.svg");
+    --text-color: var(--very-dark-grayish-blue);
+    --subtitle-color: var(--grayish-blue);
+    --quiz-card-bg: var(--white);
+    --progress-bar-bg: var(--white);
+    --error: var(--red);
+  }
