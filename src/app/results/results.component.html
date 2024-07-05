@@ -17,7 +17,13 @@
                 </div>
                 <p class="text">{{ quizTitle }}</p>
             </div>
+            <div class="total-score">
+                <p class="user-score">{{ finalScore }}</p>
+        
+                <p class="max-score">out of 10</p>
+              </div>
         </div>
+        <button [routerLink]="['/']" class="play-again-button">Play Again</button>
     </div>
     
 </section>

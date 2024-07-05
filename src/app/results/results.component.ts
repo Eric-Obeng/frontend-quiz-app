@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-results',
@@ -9,5 +11,6 @@ import { Component } from '@angular/core';
 })
 export class ResultsComponent {
   quizTitle: string = '';
+  finalScore!: number;
 
 }
