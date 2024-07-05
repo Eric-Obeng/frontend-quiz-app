@@ -44,3 +44,11 @@
     --progress-bar-bg: var(--dark-grayish-blue);
     --error: var(--white);
 }
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
+}
