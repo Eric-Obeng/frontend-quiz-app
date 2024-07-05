@@ -19,7 +19,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './quiz.component.html',
-  styleUrl: './quiz.component.scss',
+  styleUrl: './quiz.component.css',
 })
 export class QuizComponent {
   @ViewChildren('optionButton') optionButtons!: QueryList<ElementRef>;
