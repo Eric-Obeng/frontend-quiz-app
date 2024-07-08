@@ -1,0 +1,95 @@
+header {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-switch-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  left: 4px;
+  opacity: 0;
+  z-index: 999;
+}
+
+input[type="checkbox"]:checked {
+  transform: translateX(80%);
+}
+
+input[type="checkbox"]:checked + .styled-checkbox {
+  transform: translateX(80%);
+}
+
+.checkbox-container {
+  padding: 4px;
+  background-color: var(--purple);
+  border-radius: 999px;
+  width: 24px;
+  height: 12px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.checkbox-container > .styled-checkbox {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 999px;
+}
+
+.quiz-type-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-container {
+  padding: 5.71px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-type-container .text {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 100%;
+}
+
+@media screen and (min-width: 675px) {
+  header {
+    padding: 40px 64px;
+  }
+
+  .theme-switch-container {
+    gap: 16px;
+  }
+
+  .quiz-type-container {
+    gap: 24px;
+  }
+
+  .quiz-type-container .text {
+    font-size: 28px;
+  }
+
+  .icon-container {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    padding: 64px 140px;
+  }
+}

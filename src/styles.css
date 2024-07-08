@@ -1,20 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "normalize.css";
+
+:root {
+  --purple: #a729f5;
+  --very-dark-grayish-blue: #313e51;
+  --dark-grayish-blue: #3b4d66;
+  --grayish-blue: #626c7f;
+  --light-grayish-blue: #abc1e1;
+  --very-light-grayish-blue: #f4f6fa;
+  --white: #ffffff;
+  --green: #26d782;
+  --red: #ee5454;
+}
+
+.light-theme {
+  --main-bg-color: var(--very-light-grayish-blue);
+  --main-bg-image-mobile: url("/assets/images/pattern-background-mobile-light.svg");
+  --main-bg-image-tablet: url("/assets/images/pattern-background-tablet-light.svg");
+  --main-bg-image-desktop: url("/assets/images/pattern-background-desktop-light.svg");
+  --text-color: var(--very-dark-grayish-blue);
+  --subtitle-color: var(--grayish-blue);
+  --quiz-card-bg: var(--white);
+  --progress-bar-bg: var(--white);
+  --error: var(--red);
+}
+
+.dark-theme {
+  --main-bg-color: var(--very-dark-grayish-blue);
+  --main-bg-image-mobile: url("/assets/images/pattern-background-mobile-dark.svg");
+  --main-bg-image-tablet: url("/assets/images/pattern-background-tablet-dark.svg");
+  --main-bg-image-desktop: url("/assets/images/pattern-background-desktop-dark.svg");
+  --text-color: var(--white);
+  --subtitle-color: var(--light-grayish-blue);
+  --quiz-card-bg: var(--dark-grayish-blue);
+  --progress-bar-bg: var(--dark-grayish-blue);
+  --error: var(--white);
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
-  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  visibility: hidden;
 }
 
-
-
-/* clicked styles */
-.questions__options[clicked] {
-  outline: 4px solid #a729f5;
+h1,
+h2,
+p {
+  margin: 0;
 }
 
+.dark-theme,
+.light-theme {
+  visibility: visible;
+}
+
+.light-theme .option,
+.light-theme .quiz-card,
+.light-theme .submit,
+.light-theme .next,
+.light-theme .play-again-button {
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+}
+
+.dark-theme .option,
+.dark-theme .quiz-card,
+.dark-theme .submit,
+.dark-theme .next,
+.dark-theme .play-again-button {
+  box-shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+.light-moon-icon,
+.light-sun-icon {
+  display: none;
+}
+
+.dark-moon-icon,
+.dark-sun-icon {
+  display: block;
+}
+
+/* DARK THEME */
+.dark-theme .dark-moon-icon,
+.dark-theme .dark-sun-icon {
+  display: none;
+}
+
+.dark-theme .light-moon-icon,
+.dark-theme .light-sun-icon {
+  display: block;
+}

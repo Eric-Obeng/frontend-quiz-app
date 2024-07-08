@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuitzInterfaceComponent } from './quitz-interface.component';
+import { ResultsComponent } from './results.component';
 
-describe('QuitzInterfaceComponent', () => {
-  let component: QuitzInterfaceComponent;
-  let fixture: ComponentFixture<QuitzInterfaceComponent>;
+describe('ResultsComponent', () => {
+  let component: ResultsComponent;
+  let fixture: ComponentFixture<ResultsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuitzInterfaceComponent]
+      imports: [ResultsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(QuitzInterfaceComponent);
+    fixture = TestBed.createComponent(ResultsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,34 @@
+<section class="quiz-complete">
+    <h1>
+        <div>Quiz completed</div>
+        <div class="bold-heading">You scored...</div>
+    </h1>
+
+    <div class="score-button-xl-container">
+        <div class="score-container">
+            <div class="quiz-type-container">
+                <div
+                [ngStyle]="{
+                    'background-color':
+                      this.quizService.getIconContainerColor(quizTitle)
+                  }">
+                    <img
+                    [src]="
+                      '../../assets/images/icon-' + quizTitle.toLowerCase() + '.svg'
+                    "
+                    [alt]="quizTitle + ' Icon'"
+                  />
+                </div>
+                <p class="text">{{ quizTitle }}</p>
+            </div>
+            <div class="total-score">
+                <p class="user-score">{{ finalScore }}</p>
+        
+                <p class="max-score">out of 10</p>
+              </div>
+        </div>
+        <button [routerLink]="['/']" class="play-again-button">Play Again</button>
+    </div>
+    
+</section>
+
