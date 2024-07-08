@@ -18,9 +18,15 @@ The link to the site can be access by a click on this [**button**](https://front
 ### Jenef
 - Readme file
 - Final score component
+
   
 ### Rhoda
 - Json data file
 - Final score component responsiveness
 - Main styles.css
+
+### Eric Obeng 
+- Landing page interface and functionalities
+- Routing functionalities
+
  

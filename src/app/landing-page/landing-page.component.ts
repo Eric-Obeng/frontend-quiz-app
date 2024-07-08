@@ -10,7 +10,7 @@ import { QuizService } from '../quiz.service';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss',
+  styleUrl: './landing-page.component.css',
 })
 export class LandingPageComponent {
   quizService: QuizService = inject(QuizService);
