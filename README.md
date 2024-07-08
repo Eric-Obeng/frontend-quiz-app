@@ -19,4 +19,7 @@ The link to the site can be access by a click on this [**button**](https://front
 - Readme file
 - Final score component
 
+### Eric Obeng 
+- Landing page interface and functionalities
+- Routing functionalities
  
