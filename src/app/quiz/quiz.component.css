@@ -37,6 +37,7 @@
   width: 20%;
   height: 8px;
   border-radius: 999px;
+  transition: width 0.8s;
 }
 
 .options {
@@ -141,7 +142,7 @@
 /* HOVER INTERACTIONS */
 .submit:hover,
 .next:hover {
-  opacity: 0.5;
+  background-color: #d394fa;
 }
 
 .option:hover > .option-letter {
