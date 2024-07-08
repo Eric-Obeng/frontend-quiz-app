@@ -38,3 +38,7 @@ The link to the site can be access by a click on this [**button**](https://front
 
 - Quiz Interface and Quiz logic
 - Progress bar animation
+
+### Kojo Kewa
+- Theme functionalities
+- Page resposiveness
